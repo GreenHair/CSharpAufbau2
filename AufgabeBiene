@@ -1,0 +1,20 @@
+Die Biene
+
+Jede Biene ist gelb-schwarz gestreift. Des Weiteren hat jede Biene ein Geschlecht (männlich oder weiblich), 
+ein Gewicht und ein Alter.
+Geschlecht, Alter als auch Gewicht stehen mit Erschaffung einer Biene fest. Das Gleiche gilt für die Farbe. 
+Geschlecht, Alter und Gewicht können aber im Laufe des Programms verändert werden. 
+So kann eine Biene Geburtstag feiern, dann wird sie genau ein Jahr älter. 
+Sie kann sich einer Geschlechtsumwandlung unterziehen, dann hat sie das andere Geschlecht.
+Und sie kann zu viel fressen, dann wird sie dicker. Sie kann aber auch durch das Fliegen abnehmen. 
+
+Eine Biene kann eine bestimmte Strecke. Vielleicht zu einer Blume. Diese wird dann bestäubt. 
+Das Bestäuben übernimmt aber nur die Biene. Das kann nicht jeder.
+Eine Blume hat eine Farbe und eine Art.
+
+
+In einem Programmablauf soll eine Biene erzeugt werden. Diese Biene ist etwas dicker. Nun soll sie fliegen.
+Dadurch nimmt sie ab. An ihrem Geburtstag fliegt sie zu einer Blume. Diese bestäubt sie. 
+Den Honig, den sie mitbringt, frisst sie und wird dadurch dicker. 
+Nun ist sie deprimiert und unterzieht sich einer Geschlechtsumwandlung.
+ 
