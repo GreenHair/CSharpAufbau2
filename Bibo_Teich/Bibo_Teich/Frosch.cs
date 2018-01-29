@@ -25,7 +25,15 @@ namespace Bibo_Teich
 
         public string Springen(double hoehe)
         {
-            return "Ich springe " + hoehe + "cm hoch!";
+            if (!HatHunger)
+            {
+                HatHunger = true;
+                return "Ich springe " + hoehe + "cm hoch, jetzt habe ich Hunger";
+            }
+            else
+            {
+                return "Mit leerem Magen kann ich nicht springen";
+            }
         }
 
         public string Geburtag()
@@ -38,7 +46,7 @@ namespace Bibo_Teich
             }
             else
             {
-                result = "Das war mein letzter Geburtstag....";
+                result = "Das war mein letzter Geburtstag....";                
             }
             return result;
         }
@@ -48,28 +56,41 @@ namespace Bibo_Teich
             return Quak;
         }
 
-        public string Fressen(Fliege mahlzeit)
+        public string Fressen(ref Fliege mahlzeit)
         {
-            return "Die Fliege sagt: " + mahlzeit.WirdGefressen();
+            string antwort;
+            if (HatHunger)
+            {
+                HatHunger = false;                
+                antwort = "Die Fliege sagt: " + mahlzeit.WirdGefressen();
+            }
+            else
+                antwort = "Bin satt";
+            mahlzeit = null;
+            return antwort;
         }
 
         public override string ToString()
         {
             string jaNein = (HatHunger) ? "Ja" : "Nein";
-            return "Name: " + Name + "Alter: " + Alter + "Hungrig: " + jaNein;
+            return "Name: " + Name + "\tAlter: " + Alter + "\tHungrig: " + jaNein;
         }
 
         public override bool Equals(object obj)
         {
-            Frosch vergleich = obj as Frosch;
-            if(Name == vergleich.Name && Alter == vergleich.Alter && MaxAlter == vergleich.MaxAlter)
+            if (obj is Frosch)
             {
-                return true;
+                Frosch vergleich = obj as Frosch;
+                if (Name == vergleich.Name && Alter == vergleich.Alter && MaxAlter == vergleich.MaxAlter)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         public override int GetHashCode()
