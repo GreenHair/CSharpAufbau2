@@ -13,11 +13,6 @@
             <MenuItem Header="Hilfe"></MenuItem>
         </Menu>
         <ListBox Name="lstBox" DockPanel.Dock="Top">
-            <ListBoxItem>
-                <StackPanel Name="stckPanel">
-                    
-                </StackPanel>
-            </ListBoxItem>
         </ListBox>
     </DockPanel>
 </Window>

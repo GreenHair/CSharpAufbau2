@@ -25,8 +25,14 @@ namespace ListViewStackPanel
             InitializeComponent();
             for(int i = 0; i < 20; i++)
             {
-                stckPanel.Children.Add(new Label { Content = "Label " + (i + 1) });
+                lstBox.Items.Add(new Label { Content = "Label " + (i + 1) });
             }
+            StackPanel stack = new StackPanel();
+            for(int i = 0; i< 10; i++)
+            {
+                stack.Children.Add(new Label { Content = "im StackPanel" });
+            }
+            lstBox.Items.Add(stack);
         }
     }
 }
