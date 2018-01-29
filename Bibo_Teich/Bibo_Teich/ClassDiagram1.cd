@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bibo_Teich.Frosch">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAhBAAAAQAAEgAAABQQAAAAAAIAAAAECAAAAAAA=</HashCode>
+      <FileName>Frosch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibo_Teich.Fliege">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAQAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Fliege.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
