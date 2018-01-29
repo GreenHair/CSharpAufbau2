@@ -12,7 +12,16 @@
             <MenuItem Header="Ansicht"></MenuItem>
             <MenuItem Header="Hilfe"></MenuItem>
         </Menu>
-        <ListBox Name="lstBox" DockPanel.Dock="Top">
-        </ListBox>
+        <ScrollViewer Name="lstBox" DockPanel.Dock="Top" >
+        <TabControl >
+            <TabItem Header="Stack 1" Name="tab1">
+                
+                
+            </TabItem>
+            <TabItem Header="Stack 2" Name="tab2">
+                
+            </TabItem>
+        </TabControl>
+        </ScrollViewer>
     </DockPanel>
 </Window>
