@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibo_Teich", "Bibo_Teich\Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Bibo_Teich", "Test_Bibo_Teich\Test_Bibo_Teich.csproj", "{A0299D13-0D1C-4A9B-A9B9-3E1D051D6DE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibo_Teich_Erweiterung", "Bibo_Teich_Erweiterung\Bibo_Teich_Erweiterung.csproj", "{16BB7D3D-874C-4484-9747-1216623E92D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A0299D13-0D1C-4A9B-A9B9-3E1D051D6DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0299D13-0D1C-4A9B-A9B9-3E1D051D6DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0299D13-0D1C-4A9B-A9B9-3E1D051D6DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BB7D3D-874C-4484-9747-1216623E92D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BB7D3D-874C-4484-9747-1216623E92D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BB7D3D-874C-4484-9747-1216623E92D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BB7D3D-874C-4484-9747-1216623E92D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

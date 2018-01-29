@@ -14,6 +14,7 @@ namespace Bibo_Teich
         public int Alter { get; private set; }
         public bool HatHunger { get; private set;}
         public int MaxAlter { get; }
+        public bool IstLebendig { get; private set; }
 
         public Frosch(string _name, int _alter,int _maxAlter, bool _hunger)
         {
@@ -21,6 +22,7 @@ namespace Bibo_Teich
             Alter = _alter;
             MaxAlter = _maxAlter;
             HatHunger = _hunger;
+            IstLebendig = true;
         }
 
         public string Springen(double hoehe)
@@ -39,13 +41,14 @@ namespace Bibo_Teich
         public string Geburtag()
         {
             string result;
-            if(Alter+1 < MaxAlter)
-            {
-                Alter++;
+            Alter++;
+            if (Alter < MaxAlter)
+            {                
                 result = "Ich bin jetzt 1 Jahr älter";
             }
             else
             {
+                IstLebendig = false;
                 result = "Das war mein letzter Geburtstag....";                
             }
             return result;
@@ -63,10 +66,11 @@ namespace Bibo_Teich
             {
                 HatHunger = false;                
                 antwort = "Die Fliege sagt: " + mahlzeit.WirdGefressen();
+                mahlzeit = null;
             }
             else
                 antwort = "Bin satt";
-            mahlzeit = null;
+            
             return antwort;
         }
 
