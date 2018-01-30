@@ -46,7 +46,7 @@ namespace Arztpraxis
                 {
                     Console.WriteLine("Der Patient bleibt Krank...");
                 }
-                Console.WriteLine("Entertaste für der nächste Patient....");
+                Console.WriteLine("Entertaste für den nächsten Patient....");
                 Console.ReadLine();
             }
             Console.WriteLine(new string('-', 30));

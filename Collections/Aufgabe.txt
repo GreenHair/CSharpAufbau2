@@ -1,0 +1,74 @@
+
+Anwendung 1 - Mitarbeiterliste
+
+Die Klasse
+Ein Mitarbeiter wird definiert über seinen Namen, sein Alter und sein Gehalt. 
+Diese Eigenschaften werden mit Instanziierung eines Mitarbeiters festgelegt und nicht mehr geändert.
+Zwei Mitarbeiter sind identisch, wenn alle Eigenschaften identisch sind.
+
+Verwenden Sie den Typ List<> und erstellen Sie einen Programmablauf für eine Liste von Mitarbeitern. 
+Fügen Sie einige Mitarbeiter entsprechend dem nachstehenden Quellcode hinzu.
+
+	    List<Mitarbeiter> liste = new List<Mitarbeiter>();
+            liste.Add(new Mitarbeiter("MA 1", 40, 1450));
+            liste.Add(new Mitarbeiter("MA 2", 35, 1200));
+            liste.Add(new Mitarbeiter("MA 3", 42, 1560));
+            liste.Add(new Mitarbeiter("MA 4", 23, 1350));
+ 
+Löschen Sie einen Mitarbeiter. Verwenden Sie dazu folgende Anweisung.
+liste.Remove(new Mitarbeiter("MA 2", 35, 1200));
+ 
+Lassen Sie sich nun die Anzahl der Mitarbeiter auf der Liste ausgeben.
+
+Suchen Sie alle Mitarbeiter, deren Gehalt niedriger als 1500 ist und geben Sie diese aus.
+Lassen Sie sich den dritten Mitarbeiter auf der Liste ausgeben.
+
+
+
+Anwendung 2
+Die Klasse
+Ein Artikel hat eine Bezeichnung und einen Preis. 
+Die Eigenschaften werden mit der Instanziierung festgelegt und nicht mehr geändert. 
+Zwei Artikel sind gleich, wenn ihre Eigenschaften identisch sind.
+
+Verwenden Sie für den Aufbau einer Artikelliste ein HashSet<>. 
+Fügen Sie der Liste Artikel gemäß folgendem Quellcode hinzu.
+
+           HashSet<Artikel> liste = new HashSet<Artikel>();
+            liste.Add(new Artikel("A1", 23.45));
+            liste.Add(new Artikel("A2", 35.69));
+            liste.Add(new Artikel("A3", 27.99));
+            liste.Add(new Artikel("A1", 23.45));
+            liste.Add(new Artikel("A2", 35.69));
+ 
+Lassen Sie sich die Anzahl der Elemente in der Liste ausgeben. Es sollte eine drei ausgegeben werden. 
+Lassen Sie sich den zweiten Artikel ausgeben. 
+Lassen Sie sich alle Artikel der Liste ausgeben, deren Preis geringer als 25€ ist. 
+
+
+Anwendung 3
+Die Klasse
+Ein Baum wird beschrieben durch seine Art und seine Größe. 
+Die Eigenschaften werden mit Instanziierung festgelegt und nicht mehr geändert. 
+Zwei Bäume sind identisch, wenn sie der gleichen Art angehören.
+
+Verwenden Sie für den Aufbau einer Baumliste ein SortedSet<>. Fügen Sie Bäume gemäß folgendem Quellcode hinzu:
+ 
+            SortedSet<Baum> liste = new SortedSet<Baum>();
+            liste.Add(new Baum("Buche", 4));
+            liste.Add(new Baum("Buche", 7));
+            liste.Add(new Baum("Eiche", 8));
+            liste.Add(new Baum("Ahorn", 8.5));
+            liste.Add(new Baum("Eibe", 4));
+
+Lassen Sie sich die Liste ausgeben. Folgendes Ergebnis:
+ 
+Ahorn | 8,5
+Buche | 4
+Eibe | 4
+Eiche | 8
+
+
+
+
+

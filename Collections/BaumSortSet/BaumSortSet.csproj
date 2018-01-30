@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCA48AB9-A96D-4090-80E3-AFD6394E950D}</ProjectGuid>
+    <ProjectGuid>{97DD002B-9E3E-40EA-83A0-ED7A714328A2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Arztpraxis</RootNamespace>
-    <AssemblyName>Arztpraxis</AssemblyName>
+    <RootNamespace>BaumSortSet</RootNamespace>
+    <AssemblyName>BaumSortSet</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HashPatient.cs" />
-    <Compile Include="Patient.cs" />
-    <Compile Include="PatientAlterVergleich.cs" />
+    <Compile Include="Baum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,7 +51,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Beschreibung.txt" />
+    <Content Include="Aufgabe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
