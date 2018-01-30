@@ -1,0 +1,24 @@
+Anwendung Arztpraxis
+
+Eine Arztpraxis behandelt Patienten mit unterschiedlichen Krankheiten.
+
+Ein Patient hat einen Namen, ein Alter und eine Krankheit. Zur Auswahl stehen: Beinbruch oder Fleischwunde.
+Zwei Patienten sind identisch, wenn alle Eigenschaften identisch sind. 
+
+Die Patienten betreten die Arztpraxis. Ein Patient kann nur einmal die Arztpraxis betreten. Es dürfen also keine Duplikate auf der Liste sein. (Bisher hier im Kurs: List, daher gehe ich von Verwendung List aus).
+
+Der Arzt behandelt die Patienten nach Schwere ihrer Krankheit und dem Alter. Zunächst alle, die eine Fleischwunde haben (absteigend nach Alter); dann alle, die einen Beinbruch haben (absteigend nach Alter).
+
+
+Implementieren Sie einen Programmablauf wie folgt:
+-	Fügen Sie nacheinander Patienten zu einer Liste hinzu. 
+-	Anschließend wird der Arzt die Patienten auf der Liste behandeln.
+-	Lassen Sie dazu die Liste mit den Patienten sortiert nach obiger Vorschrift nacheinander ausgeben. 
+o	Bei jedem Patienten, der ausgegeben wird, entscheidet der Nutzer, ob dieser nun gesund ist oder immer noch krank.
+-	Wenn alle Patienten behandelt wurden, lassen  Sie sich aus der Liste ausgeben alle Patienten, die nun gesund ist und alle, die immer noch krank sind.
+-	Löschen Sie die gesunden Patienten von der Liste.
+-	Geben Sie aus, wie viele Patienten noch krank sind.
+-	
+
+
+
