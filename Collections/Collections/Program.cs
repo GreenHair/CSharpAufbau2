@@ -22,7 +22,7 @@ namespace Collections
             liste.Remove(new Mitarbeiter("MA 2", 35, 1200));
             Console.WriteLine("Es gibt nur noch {0} Mitarbeiter", liste.Count);
             Console.WriteLine(new string('_', 50));
-            Console.WriteLine("Mitarbeiter mit weniger als 1500€:");
+            Console.WriteLine("Mitarbeiter mit weniger als 1500,00EUR:");
             foreach (Mitarbeiter m in liste.FindAll(ma => ma.Gehalt < 1500))
                 Console.WriteLine(m);
             Console.WriteLine(new string('_', 50));

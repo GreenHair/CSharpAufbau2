@@ -8,8 +8,8 @@ namespace BaumSortSet
 {
     class Baum:IComparable<Baum>
     {
-        public string Art { get; private set; }
-        public double Groesse { get; private set; }
+        public readonly string Art;// { get; private set; }
+        public readonly double Groesse;// { get; private set; }
 
         public Baum(string _art, double _groesse)
         {

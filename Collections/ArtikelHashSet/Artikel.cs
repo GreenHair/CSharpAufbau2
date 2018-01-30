@@ -8,8 +8,8 @@ namespace ArtikelHashSet
 {
     class Artikel
     {
-        public string Bezeichnung { get; private set; }
-        public double Preis { get; private set; }
+        public readonly string Bezeichnung;// { get; private set; }
+        public readonly double Preis;//{ get; private set; }
 
         public Artikel(string was, double wieviel)
         {
