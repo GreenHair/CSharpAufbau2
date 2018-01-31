@@ -9,9 +9,9 @@ namespace Collections
 {
     class Mitarbeiter
     {
-        public string Name { get; private set; }
-        public int Alter{ get; private set; }
-        public double Gehalt { get; private set; }
+        public readonly string Name;// { get; private set; }
+        public readonly int Alter;// { get; private set; }
+        public readonly double Gehalt;// { get; private set; }
 
         public Mitarbeiter(string _name, int _alter, int _gehalt)
         {
@@ -38,7 +38,7 @@ namespace Collections
 
         public override string ToString()
         {
-            return String.Format("{0,-10} {1}\t{2:C}", Name, Alter, Gehalt);
+            return String.Format("{0,-10} {1}\t{2:F2}EUR", Name, Alter, Gehalt);
         }
     }
 }
