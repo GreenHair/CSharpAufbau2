@@ -1,0 +1,23 @@
+Mein Haus, mein Auto, mein Boot …
+
+… das sind alles meine Besitztümer (wenn ich Glück habe).
+
+Zunächst einmal habe ich nichts. Dann füge ich meinen Besitztümern nach und nach ein Haus, ein Auto 
+(oder auch mehrere) und mindestens ein Boot hinzu.
+Jedes meiner Besitztümer hat einen Wert und eine Bezeichnung.
+-	Bei einem Haus berechnet sich der Wert aus Quadratmeterpreis x Fläche.
+-	Bei einem Auto berechnet sich der Wert aus den Anschaffungskosten
+-	Bei einem Boot berechnet sich der Wert ebenfalls aus den Anschaffungskosten.
+Zwei Besitztümer sind identisch, wenn Sie den gleichen Wert, die gleiche Bezeichnung und den gleichen Typ haben. 
+Erstellen Sie eine Vererbungsstruktur für alle Besitztümer. 
+
+Anwendung
+In einem Programm werden nun nach und nach Besitztümer einer Liste hinzugefügt.
+ Es muss sichergestellt sein, dass alle Objekte nur einmal auf der Liste vorhanden sind. 
+Ich möchte eine Liste aller Vermögenswerte sortiert absteigend nach ihrem Wert ausgeben lassen;
+ den höchsten, den niedrigsten, den Durchschnittswert als auch die Summe.
+Und dann kommt der Gerichtsvollzieher. Dieser wird – bis die geforderte Summe erreicht ist – 
+nacheinander Vermögensgegenstände pfänden. Er fängt beim höchsten Wert an. 
+
+
+
