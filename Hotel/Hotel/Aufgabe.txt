@@ -1,0 +1,28 @@
+Hotel
+
+Ein Hotel hat viele Zimmer, in denen Gäste für eine gewisse Zeitspanne übernachten.
+Ein Zimmer hat eine Nummer, eine Größe, einen Preis und eine Ausstattung (Fernseher, WLAN, Küche). 
+Ein Gast hat einen Namen und ein Alter.
+
+Das Management wünscht eine Auswertung der Besucherzahlen nach Folgendem Schema:
+-	Anzahl der Gäste insgesamt
+-	Anzahl der Gäste pro Zimmer
+-	Durchschnittliche Anzahl der Gäste pro Zimmer 
+-	Durchschnittliche Anzahl an Tagen, die ein Gast ein Zimmer bucht.
+-	Summe aller Tage, die ein Zimmer gebucht wurde.
+-	Anzahl der Gäste, die älter als 70, älter als 50, zwischen 25 und 49 sowie jünger (getrennt)
+-	Durchschnittliche Alter der Gäste
+-	Durchschnittliches Alter der Gäste pro Zimmer
+-	Ausgabe aller Gäste, die ein bestimmtes Zimmer gebucht hatten (Die Nummer wird eingegeben)
+
+Schreiben Sie ein Programm, in welchem einer Liste oder Mappe Zimmer hinzugefügt werden.
+Achten Sie darauf, dass jedes Zimmer im Hotel nur einmal vorkommen kann. 
+Anschließend werden den Zimmern Gäste zugewiesen. Als Zeitspanne, die ein Gast sich im Zimmer aufhält,
+ kann die Anzahl der Tage vereinfachend verwendet werden.
+
+Lassen Sie anschließend alle oben angegebenen Auswertungen ausgeben.
+
+
+ZUSATZ:
+Für die Zeitspanne, die ein Gast im Hotelzimmer verbringt, werden als Datum von und bis eingetragen.
+ Es soll eine zusätzliche Auswertung vorgenommen werden, in welchem Monat wie viele Gäste im Hotel waren. 
