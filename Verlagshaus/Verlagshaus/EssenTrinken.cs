@@ -8,6 +8,6 @@ namespace Verlagshaus
 {
     class EssenTrinken:Themen
     {
-        public EssenTrinken(string _beschreibung) : base(_beschreibung) { }
+        public EssenTrinken(string _beschreibung, List<Autor> _autor) : base(_beschreibung, _autor) { }
     }
 }

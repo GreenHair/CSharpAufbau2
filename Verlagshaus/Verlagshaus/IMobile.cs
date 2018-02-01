@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Verlagshaus
 {
-    class Politik:Themen
+    public interface IMobile
     {
-        public Politik(string _beschreibung, List<Autor> _autor) : base(_beschreibung, _autor) { }
+        string fortbewegen();
     }
 }

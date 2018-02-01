@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Verlagshaus
 {
-    class Politik:Themen
+    class Kleinkind:Person
     {
-        public Politik(string _beschreibung, List<Autor> _autor) : base(_beschreibung, _autor) { }
+        public Kleinkind(string _name) : base(_name) { }
     }
 }

@@ -8,6 +8,6 @@ namespace Verlagshaus
 {
     class Prominenz:Themen
     {
-        public Prominenz(string _beschreibung) : base(_beschreibung) { }
+        public Prominenz(string _beschreibung, List<Autor> _autor) : base(_beschreibung, _autor) { }
     }
 }

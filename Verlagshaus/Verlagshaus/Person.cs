@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Verlagshaus
 {
-    class Politik:Themen
+    class Person
     {
-        public Politik(string _beschreibung, List<Autor> _autor) : base(_beschreibung, _autor) { }
+        public string Name { get; private set; }
+
+        public Person(string _name)
+        {
+            Name = _name;
+        }
     }
 }

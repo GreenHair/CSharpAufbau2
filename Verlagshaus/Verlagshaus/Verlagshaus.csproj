@@ -43,11 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autor.cs" />
     <Compile Include="EssenTrinken.cs" />
+    <Compile Include="IMobile.cs" />
+    <Compile Include="Kleinkind.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Politik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Prominenz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teenager.cs" />
     <Compile Include="Themen.cs" />
     <Compile Include="Wirtschaft.cs" />
     <Compile Include="Zeitschrift.cs" />
