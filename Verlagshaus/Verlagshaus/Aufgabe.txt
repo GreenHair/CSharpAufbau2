@@ -1,0 +1,44 @@
+Verlagshaus
+
+In einem Verlag werden verschiedene Zeitschriften zu unterschiedlichen Themen an. Es gibt
+-	Politik
+-	Wirtschaft
+-	Essen und Trinken
+-	Prominenz von A bis Z.
+Eine Zeitschrift kann Artikel aus allen diesen Themenbereichen anbieten oder auch nur aus einem.
+Ein Thema als Typ hat eine Beschreibung.
+Erstellen Sie aus diesen Angaben eine generische Klasse Zeitschrift<>, wobei als Typparameter das 
+Thema zu verwenden ist.
+Beispiel: Zeitschrift<Prominenz> buntes; Zeitschrift<Politik>, Zeitschrift<Thema>
+
+Man kann nun einer Zeitschrift einen Artikel hinzufügen. 
+
+Man kann sich den gesamten Inhalt einer Zeitschrift ausgeben lassen. 
+
+Man kann sich des Weiteren ausgeben lassen, wie viele Artikel zu einem Thema vorhanden sind.
+ 
+
+
+
+
+
+Erweiterung 1:
+Ein Artikel enthält eine Liste der Autoren, die Artikel zu diesem Thema schreiben. 
+Ein Autor definiert sich dabei über seinen Namen.
+Für eine Zeitschrift können wir ausgeben lassen, welche Autoren für die Zeitschrift schreiben.
+Für eine Zeitschrift können wir ausgeben lassen, zu welchen Themen ein Autor Artikel verfasst 
+(Suche anhand Name des Autors).
+
+Erweiterung  2: 
+Eine Zeitschrift wird ausgeliefert. Dazu benötigen wir eine Person, die zudem mobil ist. 
+Erstellen Sie dafür eine generische Methode ausliefern<P>(P wer) where P:Person,IMobile. 
+Innerhalb der Methode wird ausgegeben, welche Person (Name) in welcher Form die Zeitschrift ausliefert.
+
+Diese generische Methode wird in der Klasse Zeitschrift implementiert. 
+
+Der Typ Person repräsentiert eine Klasse. Eine Person hat immer einen Namen. 
+Der Typ IMobile repräsentiert ein Interface. Jede Klasse, die dieses Interface implementiert, 
+muss die Methode fortbewegen() enthalten.
+Eine Person kann nun ein Kleinkind oder ein Teenager sein. Ein Kleinkind darf die Zeitschrift 
+nicht ausliefern können, aber ein Teenager.
+
