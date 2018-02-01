@@ -1,0 +1,23 @@
+Anwendung Artikelverwaltung
+
+Erstellen Sie zwei Klassen: Artikel und Artikelliste. 
+Die Artikelliste enthält eine Liste von Artikeln (Aggregationsbeziehung).
+Ein Artikel hat folgende Eigenschaften:
+-	ArtNr
+-	Bezeichnung
+-	Preis (double)
+-	Menge (int)
+
+Eine Artikelliste stellt folgende Funktionalitäten bereit:
+-	Einen Artikel hinzufügen
+-	Einen Artikel löschen
+-	Einen Artikel ausgeben (Suche anhand ArtNr)
+-	Alle Artikel ausgeben
+
+Ein Artikel kann sein: eine Waschmaschine oder ein Kühlschrank (Technik).
+In einem Programm kann nun existieren:
+-	Eine Artikelliste, auf welcher sich nur Waschmaschinen befinden dürfen
+-	Eine Liste, auf welcher sich nur Kühlschränke befinden dürfen
+-	Eine Liste, auf welcher alle Technik-Artikel stehen.
+Erstellen Sie dazu die Klasse Artikelliste als generische Klasse.
+
