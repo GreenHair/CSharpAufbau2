@@ -1,0 +1,59 @@
+Museum
+
+In einem Museum muss Eintritt gezahlt werden. Wie viel Eintritt bezahlt werden muss, ist nicht bekannt.
+Eine Variante ist, dass ein Erwachsener 6€ und ein Kind 3€ zahlt; 
+in einem anderen Fall könnten es generell 2€ sein. 
+
+Erstellen Sie eine Anwendung bestehend aus einer Einlasskontrolle für das Museum und den Klassen Erwachsener 
+und Kind. Lassen Sie die Einlasskontrolle zählen, wie viele Personen das Museum betreten und kassieren Sie Geld. 
+Speichern Sie das erhaltene Geld in einer Eigenschaft kasse, deren Wert man sich ausgeben lassen kann.
+Verwenden Sie einen Delegaten für die Implementierung der Funktionalität.
+
+In Ihrer Anwendung erstellen Sie exemplarisch eine Einlasskontrolle sowie einen Erwachsenen und ein Kind. 
+Beide gehen an der Einlasskontrolle vorbei. Lassen Sie sich testweise den Geldbetrag ausgeben, der am Ende 
+in der kasse der Einlasskontrolle ist.
+
+Hinweise:
+	-	Der Delegat kapselt eine Methode, die einem Objekt zur Laufzeit übergeben wird
+		o	Die Methode ist nicht in der Klasse implementiert, in der sie dann gebraucht wird 
+			?	Wir haben eine Einlasskontrolle, die muss Geld kassieren 
+			?	Aber was sie kassieren soll (Wie viel sie kassieren soll), ist nicht 
+				in der Einlasskontrolle hinterlegt, sondern wird dieser zum Programmstart 
+				mitgeteilt 
+
+
+ 
+
+Werbe-App
+
+Eine Werbeapp beobachtet, welche Videos in einem Programm ausgestrahlt werden. Handelt es sich beim 
+dem Video um Werbung, dann werden dem in der Werbeapp hinterlegten Punktekonto Punkte hinzugefügt. 
+
+Wir haben eine Klasse Browser:
+-	Hier wird hinterlegt das event Plugin (das ist der Delegate, der ausgeführt werden soll)
+-	Eine Methode für anzeigenVideo()
+	o	Mit Übergabe eines Videos AN die Methode
+	o	IN der Methode wird das Plugin aufgerufen (der Delegate wird ausgeführt)
+
+Wir haben eine Klasse WerbeApp:
+-	Diese hat eine Eigenschaft: Punktekonto, ist zu Beginn leer (Wert ist 0)
+-	Die hat eine Methode untersuchen()
+	o	AN die Methode wird ein Video übergeben (das, welches im Browser angezeigt wird)
+	o	IN der Methode wird das Video untersucht:
+		?	Wenn es sich um ein Werbevideo handelt, dann wird das Punktekonto erhöht
+		?	Ansonsten wird nichts getan
+
+Wir haben eine Klasse Video:
+-	Mit der Eigenschaft Typ (ist ein Werbevideo oder nicht)
+
+Programm:
+-	Der Delegate übernimmt die Methode untersuchen() aus der WerbeApp
+-	Leitet diese an den Browser weiter, dort wird der Delegate als plugin gespeichert
+-	Dann erstellen wir eine Liste mit Videos
+-	Diese Videos werden nacheinander im Browser angezeigt
+-	Und anschließend lassen wir uns von der WErbeapp das Punktekonto ausgeben 
+
+Erweiterung:
+-	Wir haben zum einen Werbevideos und auf der anderen Seite haben wir Musikvideos
+	o	Nur Werbevideos führen zur Erhöhung des Punktestands
+
