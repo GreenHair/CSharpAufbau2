@@ -1,0 +1,13 @@
+Kaufhaus
+
+Erstellen Sie eine Anwendung für die Diebstahlsicherung am Eingang eines Kaufhauses.  
+Alle Kunden des Kaufhauses müssen da hindurchgehen. 
+Jeder Kunde, der hindurchgeht, wird gescannt. 
+Hat er etwas gestohlen, dann ertönt ein Signal. Wenn nicht, dann schweigt die Anlage.
+Am Ende des Tages kann ausgelesen werden, wie viele Kunden etwas gestohlen hatten.
+
+Verwenden Sie einen Delegaten. Das auslösende Ereignis ist: ein Kunde geht durch die Diebstahlsicherung. 
+
+
+
+

@@ -1,0 +1,29 @@
+Entwerfen und implementieren Sie eine Klassenbibliothek für einen Wildpark.
+
+Folgende Anforderungen werden gestellt:
+-	In dem Wildpark gibt es verschiedene Gehege, in denen die Tiere leben.
+-	Jedes Gehege hat Länge, Breite und Höhe, aus denen das Volumen berechnet werden kann.
+-	Ein Gehege ist gesichert.
+o	Gehege, die mit Starkstrom gesichert sind, sind für die Raubkatzen gedacht.
+o	Gehege, die nur mit Draht gesichert sind, für Kleintiere und Vögel.
+-	In einem Gehege können verschiedene Tiere untergebracht sein oder auch auch nur eine Tierart.
+o	Beispielsweise:
+?	Im Gehege sitzen nur Löwen.
+?	Im Gehege sind Papageien und der Graumull.
+
+Die Klassen für die Gehege sollen als generische Klassen aufgebaut werden (Eine Oberklasse für alle Gehege ist nicht abstrakt – sofern verwendet ). D.h., bei Verwendung dieser Klassen in einem Programm muss in <> angegeben werden, was in dieses Gehege darf.
+Es muss möglich sein, ein Gehege zu erstellen, in welchem nur Raubkatzen untergebracht werden dürfen. Dieses Gehege ist mit Starkstrom gesichert.
+-	Gehege<Raubkatze> gehege1 = new Gehege<Raubkatze>();
+-	gehege1.Add(new Löwe());  //das ist dann OK
+-	gehege1.Add(new Papagei()); //das ist dann nicht OK ? Compilerfehler
+
+Es muss möglich sein, ein Gehege zu erstellen, in welchem nur Papageien leben. Dieser Gehegetyp ist mit einem Drahtzaun gesichert.
+-	Gehege<Papagei> gehege2 = new Gehege<Papagei>();
+-	gehege2.Add(new Papagei()); //Das ist ok
+-	gehege2.Add(new Graumull()); //Das ist nicht ok
+
+Es muss möglich sein, ein Gehege zu erstellen, in welchem Kleintiere untergebracht werden.
+-	Gehege<Kleintier> gehege3 = new Gehege<Kleintier>();
+-	gehege3.Add(new Papagei()); // das ist OK
+-	gehege3.Add(new Graumull()); //das ist OK
+-	gehege3.Add(new Tiger()); //Das ist nicht oK

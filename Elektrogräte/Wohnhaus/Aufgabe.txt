@@ -1,0 +1,80 @@
+Elektrogeräte
+
+
+Anwendungsbeschreibung
+In unserem Wohnhaus gibt es eine Menge von unterschiedlichen Elektrogeräten, die wir als Nutzer gemeinsam (mit einem Befehl) ein- als auch ausschalten können. Zu diesen Elektrogeräten gehören:
+-	Ein Radio
+o	welches wir zusätzlich lauter und leiser stellen können. Die eingestellte Lautstärke wird gespeichert.
+o	Wir können einen Sender einstellen. Es wird die dazugehörige Frequenz gespeichert.
+-	Ein DVD-Player
+o	Auch hier können wir eine Lautstärke einstellen.
+o	Wir können eine DVD abspielen. Es wird der Inhalt der DVD ausgegeben.
+-	Einen Fernseher
+o	Auch hier können wir die Lautstärke einstellen.
+o	Wir können einen Sender einstellen.
+o	Wir können uns das momentan laufende Programm auf dem eingestellten Sender auschauen.
+-	Ein Rauchmelder
+o	Auch diesen können wir ein- und ausschalten.
+o	Er schlägt Alarm, wenn er eingeschaltet ist und Rauch bemerkt wird.
+
+
+Detaillierte Aufgabenabfolge
+
+Erstellen Sie in der Klassenbibliothek zunächst eine Klasse Radio mit folgenden Eigenschaften:
+-	isOn für die Speicherung, ob ein Radio eingeschaltet ist (bool)
+-	volume für die Speicherung der eingestellten Lautstärke (int)
+Ein Radio hat folgende Objektmethoden:
+-	lauter() und leiser(): Verändern der Eigenschaft volume (Optional: die Lautstärke liegt im Bereich zwischen 0 und 100)
+-	on()/off() für das Ein- und Ausschalten des Radios. Hier soll eine kurze Meldung für den Nutzer zurückgegeben werden.
+-	setFrequency(): Hier soll eine Frequenz in einer neuen Objektvariablen gespeichert werden.
+-	ToString() (aus der Klasse object überschrieben): Hier sollen Informationen über den internen Zustand (alle Eigenschaftswerte des Radios) zurückgegeben werden.
+
+Testen Sie Ihre Klasse Radio in der Main() (die Klasse Wohnhaus der Konsolenanwendung). Folgenden Sie dazu den nachstehenden Anweisungen:
+-	Erzeugen Sie ein Objekt der Klasse Radio „omisAltesRadio“
+-	Schalten Sie es an
+-	Drehen Sie die Lautstärke lauter
+-	Drehen Sie die Lautstärke lauter
+-	Sich den Zustand und die Lautstärke von omisAltesRadio ausgeben lassen
+-	Schalten Sie das Radio aus.
+-	Lassen Sie sich wiederum den Zustand des Radios ausgeben.
+
+Erweitern Sie nun die Klasse Radio. Fügen Sie eine Methode toFreg() als Klassenmethode (ACHTUNG: static) hinzu. Sie Methode übernimmt als Zeichenkette einen Sendernamen und gibt die dazugehörige Frequenz als double-Wert zurück.
+
+Testen Sie die Methode in der Main(), indem Sie sich die Frequenz zu einem Sender ausgeben lassen (bspw. Sender = BFBS, Frequenz 103.00)
+
+Ein Radio soll sich ein Frequenzband merken können:
+-	Fügen Sie der Klasse Radio eine Eigenschaft band hinzu, welche eine Zeichenkette speichern kann
+-	Fügen Sie der Klasse Radio eine Methode setBand(string band) hinzu.
+-	Passen Sie die Methode ToString() in der Klasse Radio an.
+
+Testen Sie die neue Funktionalität in der Main(), indem Sie dem Objekt des Radios ein Band zuordnen. Lassen Sie sich den Zustand des Radios mit der Methode ToString() ausgeben.
+
+Schreiben Sie einen Konstruktor für die Klasse Radio, so dass man es mit einer Frequenz initialisieren kann. Man sollte das Radio aber immer noch mit dem Standardkonstruktor erzeugen können.
+Alternativ soll ein Radio-Objekt mit einem Sender (als String) initialisiert werden. (Verwenden Sie dazu die Klassenmethode toFreq())
+
+
+Erstellen Sie nun eine neue Klasse TV mit der Eigenschaft program, den Methoden on() und off(), die kurze Meldungen („TV ist an“ und „TV ist aus“) zurückgeben.
+Die Klasse TV wird ebenfalls in der Main()-Methode des Wohnhauses verwendet. Erstellen Sie zum Test ein Objekt dieser Klasse und schalten Sie es ein und wieder aus. Wechseln Sie das Programm/den Sender (Eigenschaft program). Implementieren/Überschreiben Sie ebenfalls die ToString()-Methode für die Ausgabe der Werte aller Objekteigenschaften.
+
+Legen Sie eine neue Klasse Elektrogerät an. (Ein Objekt dieser Klasse darf man nicht erstellen können).
+Leiten Sie die Klasse Radio von der Klasse Elektrogerät ab. (Vererbung) 
+Leiten Sie ebenfalls die Klasse TV von der Klasse Elektrogerät ab.
+Ziehen Sie alle Gemeinsamkeiten von Radio und TV in die Oberklasse Elektrogerät.
+Schreiben Sie eine neue Klasse DVD-Player, die ebenfalls ein Elektrogerät ist. Ein DVD-Player kann eine eingelegte DVD abspielen. Wenn keine DVD eingelegt ist, aber der DVD-Player angeschaltet wurde, dann erscheint eine entsprechende Fehlermeldung auf der Console.
+
+
+Testen Sie nun die erstellte Vererbungsstruktur in der Methode Main().
+Erstellen Sie ein Array für Elektrogeräte. Fügen Sie folgende Objekte dem Array hinzu:
+-	Ein Schlafzimmerradio, eingestellt auf den Sender „Wolke7“
+-	Ein wohnzimmerradio
+-	Ein bügelTV
+-	Ein kloRadio, einstellt auf Frequenz 81.50
+-	Ein Rauchmelder   (Klasse müsste noch erstellt werden)
+o	Ein Rauchmelder schlägt Alarm, wenn er eingeschaltet ist und Rauch bemerkt wird.
+Geben Sie die Eigenschaftswerte aller Elektrogeräte im Array aus (über Aufruf der Methode ToString() ).
+Fragen Sie den Nutzer, welches Gerät eingeschaltet werden soll, sofern es noch nicht eingeschaltet ist. 
+Schalten Sie alle Geräte aus. (foreach-Schleife)
+
+
+
+ 
