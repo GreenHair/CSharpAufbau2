@@ -1,0 +1,20 @@
+Bankschließfach
+
+In einer Bank befinden sich 4 Schließfächer. Betritt ein Kunde die Bank, so wählt er entweder ein Fach, 
+welcher er gemietet hat und lässt sich den Inhalt anzeigen oder er möchte ein Fach mieten.
+Im zweiten Fall werden ihm alle vorhandenen freien Fächer angezeigt und er wählt eines aus. In dieses 
+legt er dann den Inhalt (Inhalt als Zeichenkette).
+Wenn kein Fach mehr frei ist, dann muss er die Bank wieder verlassen.
+Der Kunde kann ein Fach, welcher er gemietet hat, allerdings auch wieder zurückgeben. Dann wird der Inhalt 
+geleert und das Fach steht wieder zur Verfügung.
+
+Implementieren Sie ein entsprechendes Programm. 
+Das Programm wird gestartet und wir erhalten zunächst ein Menü, in welchem wir gefragt werden, 
+ob ein Kunde die Bank betritt oder wir das Programm beenden wollen. Wenn ein Kunde die Bank betritt,
+ dann erscheint ein Menü, was der Kunde machen möchte (Fach mieten, öffnen oder zurückgeben). 
+Nach getaner Arbeit erscheint wieder das Anfangsmenü.
+Verwenden Sie eine Klasse Bankschließfach, welche die Eigenschaften belegt (bool) und 
+inhalt (List<String>) kapselt.
+
+
+
