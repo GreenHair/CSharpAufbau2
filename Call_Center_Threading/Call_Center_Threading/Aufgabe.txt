@@ -1,0 +1,23 @@
+Call Center
+
+Erstellen Sie eine Multithreading-Anwendung für die Simulation eines Call-Centers.
+Auf der einen Seite gibt es eine Anrufwarteliste, auf der anderen Seite zwei Call Center Agents.
+In die Anrufwarteliste werden in einem zufälligen Abstand neue Telefonanrufe von Kunden hinzugefügt. Die Agents nehmen die Anrufe entgegen und brauchen für deren Bearbeitung ebenfalls eine zufällige Zeitspanne.
+Es werden insgesamt 25 Anrufe in die Warteliste eingetragen. Zum Schluss wird ausgegeben, wie lange das Call Center für die Bearbeitung aller Telefonanrufe gebraucht hat.
+
+Erweiterung:
+-	Die Anrufe der Kunden werden in drei Kategorien einteilt:
+o	Neukunde
+o	Beschwerde
+o	Bestandskunde
+-	Es gilt: 
+o	Die Neukunden werden in der Priorität am höchsten gewertet und somit als erstes bedient. Also wenn ein Neukunde anruft, landet er sofort am Anfang der Warteschlange.
+o	Als zweites werden die Bestandskunden bedient.
+o	Das Beschwerdemanagement erfolgt in letzter Instanz.
+Welcher Anruf wann eintrifft, ist zufällig. Die Agents nehmen aber immer den Anruf vom Beginn der Warteschlange entgegen. (FIFO) Die Anrufe müssen daher schon beim Hinzufügen zum Pool richtig einsortiert werden. Dann ist eine Queue nicht mehr verwendbar, sondern wir könnten uns für ein SortedSet<> entscheiden (heißt auch: kein Anruf doppelt)
+
+
+Hinweis:
+Überlegen Sie sich zunächst den Programmablauf OHNE Verwendung von Threads (wie heute Morgen beim Drucker). Wenn das funktioniert, dann mit Threads.
+D.h.: Überlegen Sie, welche Methoden/Aufgaben parallel ausgeführt werden und was die gemeinsam genutzte Ressource ist. 
+

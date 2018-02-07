@@ -62,6 +62,7 @@ namespace ArbeitslagerThreading
             int max = Belegschaft.Max(m => m.PersönlicheLeistung);
             int MaDesTages = Belegschaft.FindIndex(m => m.PersönlicheLeistung == max);
             Console.WriteLine("Mitarbeiter des Tages ist Arbeiter {0} mit {1} erstellte Schlüsselhänger",MaDesTages,max);
+            Console.ReadLine();
         }
     }
 }

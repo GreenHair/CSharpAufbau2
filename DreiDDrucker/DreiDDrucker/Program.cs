@@ -2,17 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace DreiDDrucker
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            Ablauf1();
-            Console.ReadLine();
-            Ablauf2();
+            //Ablauf1();
+            //Console.ReadLine();
+            //Ablauf2();
+            //Console.ReadLine();
+            // Variante1();
+            Variante2();
+        }
+
+        static void Variante1()
+        {
+            Variant1 v1 = new Variant1();
+
+            Thread t1 = new Thread(v1.Threading1);
+            Thread t2 = new Thread(v1.Threading1_Clock);
+
+            t1.Start();
+            t2.Start();
+
+        }
+
+        static void Variante2()
+        {
+            Queue<Druckauftrag> Warteschlange = new Queue<Druckauftrag>();
+            Drucker Printer = new Drucker(Warteschlange);
+            Variant2 Arbeiter = new Variant2(Warteschlange);
+            Thread t1 = new Thread(Arbeiter.GenerierenAufträge);
+            Thread t2 = new Thread(Printer.Drucken);
+            t1.Start();
+            t2.Start();
         }
 
         static void Ablauf1()
