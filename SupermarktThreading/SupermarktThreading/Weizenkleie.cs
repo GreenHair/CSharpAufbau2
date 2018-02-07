@@ -27,19 +27,21 @@ namespace SupermarktThreading
 
         public void Einkaufen()
         {
-            
-            if(Vorrat.Count > 0)
+            lock (Vorrat)
             {
-                Vorrat.RemoveAt(0);
-                Console.WriteLine(Thread.CurrentThread.Name + " hat ein Päckchen Weizenkleie gekauft");
-                Console.WriteLine("Es sind noch {0} Päckchen Weizenkleie da", Vorrat.Count);
-                Thread.Sleep(500);
-              //  if (Vorrat.Count > 0) { Vorrat.RemoveAt(0); }
-              //  Console.WriteLine("Es sind noch {0} Päckchen Weizenkleie da", Vorrat.Count);
-            }
-            else
-            {
-                Console.WriteLine(Thread.CurrentThread.Name + ": Alles Ausverkauft");
+                if (Vorrat.Count > 0)
+                {
+                    Vorrat.RemoveAt(0);
+                    Console.WriteLine(Thread.CurrentThread.Name + " hat ein Päckchen Weizenkleie gekauft");
+                    Console.WriteLine("Es sind noch {0} Päckchen Weizenkleie da", Vorrat.Count);
+                    Thread.Sleep(500);
+                    //  if (Vorrat.Count > 0) { Vorrat.RemoveAt(0); }
+                    //  Console.WriteLine("Es sind noch {0} Päckchen Weizenkleie da", Vorrat.Count);
+                }
+                else
+                {
+                    Console.WriteLine(Thread.CurrentThread.Name + ": Alles Ausverkauft");
+                }
             }
         }
     }

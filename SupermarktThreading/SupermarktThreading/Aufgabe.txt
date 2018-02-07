@@ -1,0 +1,13 @@
+Weizenkleie im Supermarkt
+
+In einem Supermarkt gibt es ein Regal mit zwei Päckchen Weizenkleie. Nun kommen drei Personen in den Laden, welche alle zum Regal gehen und ein Päckchen Weizenkleie kaufen wollen. Leider wird diese wohl nicht für alle reichen.
+
+Erstellen Sie eine Anwendung nach obiger Beschreibung als Multithreading-Anwendung.
+-	Erstellen Sie in der Main eine Liste mit dem Typ Weizenkleie. Fügen Sie diese Liste zwei Objekte der Klasse Weizenkleie hinzu.
+-	Erstellen Sie eine Klasse Person. Die Liste mit der Weizenkleie soll die Ressource sein, welche von allen Objekten der Klasse Person geteilt wird. Erstellen Sie daher in der Klasse Person einen Konstruktor, welcher die Liste entgegennimmt und in einer Objekteigenschaft speichert.
+-	Fügen Sie der Klasse Person eine Objektmethode kaufen hinzu. Hier soll, wenn auf der Liste sich noch ein Päckchen Weizenkleie befindet, die Liste um diese reduziert werden. Fügen Sie eine dazugehörige Konsolenausgabe hinzu. 
+o	Zwischen der Konsolenausgabe und der Änderung der Liste soll der Thread sich schlafen legen. 
+-	Erstellen Sie in der Main drei Objekte der Klasse Person. Erstellen Sie drei Threads, die jeweils eine kaufen-Methode einer Person ausführen werden.
+-	Geben Sie jedem Thread einen individuellen Namen und starten Sie die drei Threads.
+
+Wenn ein Laufzeitfehler auftritt, dann müssen Sie die Methode kaufen() so anpassen, dass diese thread-safe ist.

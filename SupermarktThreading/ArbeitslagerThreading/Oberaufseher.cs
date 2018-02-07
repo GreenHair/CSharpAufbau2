@@ -58,7 +58,7 @@ namespace ArbeitslagerThreading
                 Pensum.Add(new Schlüsselhänger());
                 PersönlicheLeistung++;
                 //Console.ForegroundColor = farbe;
-                Console.WriteLine(Thread.CurrentThread.Name + " hat einen Schlüsselhänger erstellt");
+                Console.WriteLine(Thread.CurrentThread.Name + " hat " + PersönlicheLeistung + " Schlüsselhänger erstellt");
                 Thread.Sleep(500);
             }            
         }

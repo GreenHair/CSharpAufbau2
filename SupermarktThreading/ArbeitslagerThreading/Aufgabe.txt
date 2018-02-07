@@ -1,0 +1,8 @@
+Arbeitslager
+
+Wir simulieren ein Arbeitslager. Wir haben mehrere Arbeiter, die alle Schlüsselanhänger produzieren. Alle Schlüsselanhänger landen in einer Kiste.
+Ab und zu kommt der Oberaufseher und schaut nach, wie viele Schlüsselanhänger schon produziert wurden.
+Arbeiten Sie mit einer ArrayList als gemeinsam genutzter Ressource für die beiden Threads Arbeiter und Aufseher.
+Erstellen Sie vom Aufseher eine Instanz und von dem Arbeiter mehrere Instanzen.
+Lassen Sie die Arbeiter eine zufällige Anzahl von Schlüsselanhängern produzieren. Der Aufseher wird diese nach einer vorzugebenden Zeitspanne (Übergabe an Methode) entnehmen. Das Ganze 3x.
+Am Ende des Programms wird ausgegeben, wie viele Schlüsselanhänger insgesamt produziert und dem Aufseher übergeben wurden. Eventuell auch, wie viele noch in der Kiste sind. 

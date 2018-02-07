@@ -1,0 +1,33 @@
+Der 3D-Drucker
+
+
+Beschreibung
+Ein 3D-Drucker druckt verschiedene Formen. Er hat eine Warteschlange von Druckaufträgen, die er in der 
+Reihenfolge ihres Eintreffens (FIFO-Prinzip) abarbeitet. 
+Ein Druckauftrag setzt sich dabei aus einer Beschreibung der Form sowie einer Zeit, 
+die zum Drucken benötigt wird zusammen.
+
+
+Handlungsanweisung
+Erstellen Sie zwei Klassen im Programm.
+-	Ein Druckauftrag
+	o	Mit den Eigenschaften Beschreibung und Zeit (String sowie int-Wert)
+-	Ein Drucker
+	o	Mit einer Warteschlange von Druckaufträgen (als Queue)
+	o	Einer Methode zum Hinzufügen eines Druckauftrags
+	o	Einer Methode drucken
+		?	Es wird solange gedruckt, bis keine Aufträge mehr in der Warteschlange sind
+		?	Die Zeiten, die zum Drucken der einzelnen Formen benötigt wurden, werden addiert
+Erstellen Sie einen Programmablauf nach Folgendem Muster:
+-	Erstellen Sie einen Drucker.
+-	Fügen Sie dem Drucker verschiedene Formen hinzu, die er drucken soll.
+-	Lassen Sie den Drucker drucken.
+-	Geben Sie zum Schluss aus, wie lange der Drucker insgesamt zum Drucken gebraucht hat.
+
+Erstellen Sie einen alternativen Programmablauf nach Folgendem Muster:
+-	Erstellen Sie einen Drucker.
+-	Fragen Sie wiederholt den Nutzer, was er drucken lassen möchte. Die Zeit, die für das Drucken 
+	benötigt wird, wird per Random ermittelt.
+-	Wenn der Nutzer nichts mehr drucken lassen möchte, starten Sie das Drucken.
+
+
