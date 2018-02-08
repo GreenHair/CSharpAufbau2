@@ -1,0 +1,18 @@
+Entenhausen
+
+
+Schreiben Sie eine kleine Anwendung für folgende Aufgabenstellung:
+
+Dagobert Duck hat einen Geldspeicher, in welchem sich viele Taler befinden.
+Die Anzahl ist unbekannt, liegt aber zwischen 10000 und 12000. 
+Das Geld soll nun in Säcke abgepackt werden. Das geschieht mit einer Schaufel. 
+In einen Sack passen max 300 Taler. 
+Das Programm soll die Anzahl der Taler, die im Geldspeicher sind, als zufällige Zahl zunächst generieren. 
+Anschließend soll das Programm Säcke mit Talern abfüllen, wobei die Anzahl der Säcke nicht bekannt ist, 
+nur wie viel maximal hineinpassen. (Wiederholt Taler in Sack abfüller mit Zufälliger Anzahl). 
+Wenn kein Taler mehr zum Abfüllen vorhanden ist, soll das Programm ausgeben,
+	- wie viele Säcke befüllt wurden
+	- Wie viele Taler durchschnittlich in einem Sack sind
+	- Das Maximum sowie das Minimum der Anzahl von Talern in einem Sack.
+
+

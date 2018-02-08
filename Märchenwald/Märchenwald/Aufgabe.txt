@@ -1,0 +1,16 @@
+Hänsel und Gretel
+
+Als Hänsel und Gretel in den Wald gejagt wurden, hatten Sie Brotkrumen verstreut, um den Weg nach Hause zu finden. 
+Leider leider gibt es Wald nun mal Tiere, die Interesse am Brot hatten und dieses fraßen.
+
+Hänsel und Gretel sollen einen Thread simulieren, welcher in einer zufälligen Zeitspanne 
+eine Brotkrume „fallen lässt“.
+Mindestens zwei Vögel simulieren dazu parallel laufende Threads, die auf eine solche Brotkrume warten. 
+Sobald eine Brotkrume den Weg zum Waldboden findet, stürzen sie sich darauf. Aber nur einer ist der Glückliche.
+Wenn Hänsel und Gretel kein Brot mehr haben, dann ist die Anwendung beendet. 
+(Beispielsweise Simulation durch Werfen von 20 Stück Brot).
+Wenn alle Threads ordnungsgemäß sich beendet haben, soll ausgegeben werden, wie viele Brotkrumen 
+der jeweilige Vogel verspeist hat.
+
+
+
