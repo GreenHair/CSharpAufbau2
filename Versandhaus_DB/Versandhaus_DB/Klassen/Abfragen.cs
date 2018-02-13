@@ -72,7 +72,7 @@ namespace Versandhaus_DB.Klassen
             Datenbank db = new Datenbank("localhost", "root", "", "versandhaus");
             db.verbinden();
             // List<List<string>> tabelle = db.ausgebenTabelle(" select b.kunden_id,b.datum,b.bestell_nr,a.bezeichnung,bp.anzahl,bp.anzahl*a.vpreis as position from bestellung as b join bestellpositionen as bp on b.bestell_nr=bp.bestell_nr join artikel as a on bp.artikel_id=a.artikel_id where b.kunden_id=11;");
-            List<List<string>> tabelle = db.ausgebenTabelle("");
+            List<List<string>> tabelle = db.ausgebenTabelle("select ");
             List<Bestellung> Bestellungen = new List<Bestellung>();
             
             foreach (List<string> zeile in tabelle)
@@ -84,7 +84,7 @@ namespace Versandhaus_DB.Klassen
                 b.Positionen.AddRange(BestellPositionenVonBestellung(b.Bestellnummer));
             }
 
-
+            db.trennen();
             return Bestellungen.ToArray();
         }
 
@@ -98,16 +98,46 @@ namespace Versandhaus_DB.Klassen
             foreach(List<string> zeile in tabelle)
             {
                 Bestellposition bp = new Bestellposition();
-                bp.Id;
-                bp.Ware = getArtikel(bp._id);
+                bp.Id = Convert.ToInt32(zeile[0]);
+                bp.Anzahl = Convert.ToInt32(zeile[1]);
+                int art_nr = Convert.ToInt32(zeile[2]);                
+                bp.Ware = getArtikel(art_nr);
             }
-
+            db.trennen();
             return Bestellpositionen.ToArray();
         }
 
         private static Artikel getArtikel(int art_id)
         {
-            throw new NotImplementedException();
+            Datenbank db = new Datenbank("localhost", "root", "", "versandhaus");
+            db.verbinden();
+            List<List<string>> tabelle = db.ausgebenTabelle("");
+            Artikel a = new Artikel();
+            foreach (List<string> zeile in tabelle)
+            {
+                a.Id = Convert.ToInt32(zeile[0]);
+                a.EPreis = Convert.ToDouble(zeile[1]);
+                a.VPreis = Convert.ToDouble(zeile[2]);
+                a.Bezeichnung = zeile[3].ToString();
+                if (zeile[4].Length > 0)
+                {
+                    switch (Convert.ToInt32(zeile[4]))
+                    {
+                        case 100:
+                            a.LagerArt = Lager.Technik;
+                            break;
+                        case 2:
+                            a.LagerArt = Lager.Kleidung;
+                            break;
+                    }
+                }
+                else
+                {
+                    a.LagerArt = Lager.Unbekannt;
+                }
+            }
+            db.trennen();
+            return a;
         }
     }
 }
