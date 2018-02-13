@@ -1,0 +1,34 @@
+﻿<Window x:Class="Sprachqualifikation_WPF.SuchePerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sprachqualifikation_WPF"
+        mc:Ignorable="d"
+        Title="SuchePerson" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="60*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Nummer zur Suche" VerticalContentAlignment="Center"/>
+        <ComboBox Name="cmbNummer" Grid.Column="1" SelectionChanged="cmbNummer_SelectionChanged" Height="20" Margin="5"/>
+        <Label Name="lblName" Grid.Row="1" Grid.ColumnSpan="2" FontSize="18"/>
+        <Label Content="Sprachen" Grid.Row="2"/>
+        <ListBox Name="lstSprachen" Grid.Row="2" Grid.Column="1">
+            <!--<GridView>
+                <GridViewColumn Header="Sprache"/>
+                <GridViewColumn Header="Grad"/>
+            </GridView>-->
+        </ListBox>
+
+        <Button Name="btnCLose" Grid.Row="3" Grid.Column="1" Content="OK" Margin="5" Width="100" Height="20" Click="btnCLose_Click"/>
+        
+    </Grid>
+</Window>
