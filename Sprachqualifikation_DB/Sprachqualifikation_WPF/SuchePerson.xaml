@@ -21,12 +21,14 @@
         <ComboBox Name="cmbNummer" Grid.Column="1" SelectionChanged="cmbNummer_SelectionChanged" Height="20" Margin="5"/>
         <Label Name="lblName" Grid.Row="1" Grid.ColumnSpan="2" FontSize="18"/>
         <Label Content="Sprachen" Grid.Row="2"/>
-        <ListBox Name="lstSprachen" Grid.Row="2" Grid.Column="1">
-            <!--<GridView>
-                <GridViewColumn Header="Sprache"/>
-                <GridViewColumn Header="Grad"/>
-            </GridView>-->
-        </ListBox>
+        <ListView Name="lstSprachen" Grid.Row="2" Grid.Column="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Sprache" DisplayMemberBinding="{Binding Path=Welche}"/>
+                    <GridViewColumn Header="Grad" DisplayMemberBinding="{Binding Path=Niveau}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
         <Button Name="btnCLose" Grid.Row="3" Grid.Column="1" Content="OK" Margin="5" Width="100" Height="20" Click="btnCLose_Click"/>
         

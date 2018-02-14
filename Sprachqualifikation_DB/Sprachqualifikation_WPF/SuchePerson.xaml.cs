@@ -51,12 +51,12 @@ namespace Sprachqualifikation_WPF
         {
             int index = cmbNummer.SelectedIndex;
             lblName.Content = personen[index].Vorname + " " + personen[index].Nachname;
-            lstSprachen.Items.Clear();
-            //lstSprachen.ItemsSource = personen[index].Sprachen;
-            foreach (Sprache s in personen[index].Sprachen)
-            {
-                lstSprachen.Items.Add(s.Welche + " - " + s.Niveau);
-            }
+            //lstSprachen.Items.Clear();
+            lstSprachen.ItemsSource = personen[index].Sprachen;
+            //foreach (Sprache s in personen[index].Sprachen)
+            //{
+            //    lstSprachen.Items.Add(s.Welche + " - " + s.Niveau);
+            //}
         }
     }
 }

@@ -1,0 +1,40 @@
+﻿<Window x:Class="ReisezieleWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReisezieleWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--Linke Seite-->
+        <Label Content="Alle Reiseziele" Height="30" VerticalAlignment="Top"/>
+        <ListBox Name="lstZiele" ItemsSource="{Binding}" VerticalAlignment="Bottom" MinHeight="275" SelectionChanged="lstZiele_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label FontSize="15" FontWeight="Bold" Content="{Binding Land}"/>
+                        <Label Content="{Binding Ort}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <!--Rechte Seite-->
+        <Label Content="Orte nach Reiseziel anzeigen" Height="30" VerticalAlignment="Top" Grid.Column="1"/>
+        <ComboBox Name="cmbZiel" ItemsSource="{Binding}" Grid.Column="1" Margin="0,36,0,0" Height="30" VerticalAlignment="Top"
+                  SelectionChanged="cmbZiel_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Land}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ListBox Grid.Column="1" VerticalAlignment="Bottom" MinHeight="240" Name="lstCity">
+            
+        </ListBox>
+    </Grid>
+</Window>

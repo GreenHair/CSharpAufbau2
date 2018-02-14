@@ -8,16 +8,16 @@ namespace SprachqualiLib
 {
     public class Person
     {
-        public string Pers_nr;
-        public string Vorname;
-        public string Nachname;
-        public List<Sprache> Sprachen;
+        public string Pers_nr { get; set; }
+        public string Vorname { get; set; }
+        public string Nachname { get; set; }
+        public List<Sprache> Sprachen { get; set; }
     }
 
     public class Sprache
     {
-        public string Welche;
-        public int Niveau;
-        public string Pers_nr;
+        public string Welche { get; set; }
+        public int Niveau { get; set; }
+        public string Pers_nr { get; set; }
     }
 }

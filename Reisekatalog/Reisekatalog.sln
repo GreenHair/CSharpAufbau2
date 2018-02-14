@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reisekatalog", "Reisekatalog\Reisekatalog.csproj", "{E61EE5D8-7174-40BD-9C45-A074D3DA4E1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReisekatologLib", "ReisekatologLib\ReisekatologLib.csproj", "{8A025245-D08F-49DC-9B33-69863D48274B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReisezieleWPF", "ReisezieleWPF\ReisezieleWPF.csproj", "{5809935C-943D-4B56-B08C-3352BEA2405E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E61EE5D8-7174-40BD-9C45-A074D3DA4E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61EE5D8-7174-40BD-9C45-A074D3DA4E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61EE5D8-7174-40BD-9C45-A074D3DA4E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61EE5D8-7174-40BD-9C45-A074D3DA4E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A025245-D08F-49DC-9B33-69863D48274B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A025245-D08F-49DC-9B33-69863D48274B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A025245-D08F-49DC-9B33-69863D48274B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A025245-D08F-49DC-9B33-69863D48274B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5809935C-943D-4B56-B08C-3352BEA2405E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5809935C-943D-4B56-B08C-3352BEA2405E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5809935C-943D-4B56-B08C-3352BEA2405E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5809935C-943D-4B56-B08C-3352BEA2405E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
