@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzalieferung", "Pizzalieferung\Pizzalieferung.csproj", "{FA70617C-8734-4691-9484-ED90CC954CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibo", "Bibo\Bibo.csproj", "{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Debug|x86.ActiveCfg = Debug|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Debug|x86.Build.0 = Debug|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Release|Any CPU.ActiveCfg = Release|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Release|Mixed Platforms.Build.0 = Release|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Release|x86.ActiveCfg = Release|x86
+		{FA70617C-8734-4691-9484-ED90CC954CAE}.Release|x86.Build.0 = Release|x86
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6210BE3E-DE55-43FE-AA0B-3FA9EC85BF20}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

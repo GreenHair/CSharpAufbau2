@@ -1,0 +1,31 @@
+﻿<Window x:Class="Pizzalieferung.FormPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FormPage" Height="300" Width="300">
+    
+    <Window.Resources>
+        <ResourceDictionary Source="Formatvorlage.xaml"></ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="{StaticResource farbverlauf}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="20*" />
+        </Grid.RowDefinitions>
+        <ComboBox Name="cmbSize" Grid.Row="0" Margin="10,5,10,5" ItemsSource="{Binding}">
+            
+        </ComboBox>
+        
+        
+        <CheckBox Name="chk1" Content="Salami" Grid.Row="1" HorizontalAlignment="Center"  Margin="109,20,117,50"/>
+        <CheckBox Name="chk2" Content="Ananas" Grid.Row="1" HorizontalAlignment="Center" Margin="109,42,96,40" Width="73" />
+
+        <TextBox Name="txtZusatz" Grid.Row="1" Margin="10,85,10,0" />
+        <Button Name="OK" Content="bestellen" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="OK_Click"/>
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="preis" VerticalAlignment="Top" Grid.Row="3" Width="80" Foreground="Red" FontWeight="Bold"/>
+        <RadioButton Content="1" Height="16" HorizontalAlignment="Left" Margin="12,17,0,0" Name="radioButton1" IsChecked="True" VerticalAlignment="Top" Grid.Row="2" />
+        <RadioButton Content="2" Height="16" HorizontalAlignment="Left" Margin="100,17,0,0" Name="radioButton2" VerticalAlignment="Top" Grid.Row="2" />
+        <RadioButton Content="3" Grid.Row="2" Height="16" HorizontalAlignment="Left" Margin="184,17,0,0" Name="radioButton3" VerticalAlignment="Top" />
+    </Grid>
+</Window>

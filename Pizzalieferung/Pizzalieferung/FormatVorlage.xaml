@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Style TargetType="Button">
+        <Setter Property="Button.FontStyle" Value="Italic" />
+        <Setter Property="Button.Foreground" Value="White" />
+        <Setter Property="Button.Background" Value="Black" />
+        <Style.Triggers>
+            <Trigger Property="Button.IsMouseOver" Value="True">
+                <Setter Property="Button.Foreground" Value="Black" />
+                <Setter Property="Button.Background" Value="White" />
+            </Trigger>
+            <Trigger Property="Button.IsMouseOver" Value="False">
+                <Setter Property="Button.Foreground" Value="White" />
+                <Setter Property="Button.Background" Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <RadialGradientBrush x:Key="farbverlauf">
+        <GradientStop Color="Azure" Offset="0.3" />
+        <GradientStop Color="Beige" Offset="0.6" />
+        <GradientStop Color="Bisque" Offset="1.0" />
+    </RadialGradientBrush>
+    
+</ResourceDictionary>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="PizzalieferungDel.FormularPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzalieferungDel"
+        mc:Ignorable="d"
+        Title="FormularPage" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Name="cmbSize" Margin="50,30,50,30">
+            <ComboBoxItem>14</ComboBoxItem>
+            <ComboBoxItem>16</ComboBoxItem>
+            <ComboBoxItem>18</ComboBoxItem>
+        </ComboBox>
+        <StackPanel HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center">
+            <CheckBox Name="chkTomaten" Content="Tomaten" IsChecked="False"/>
+            <CheckBox Name="chkZwiebeln" Content="Zwiebeln" IsChecked="False"/>
+        </StackPanel>
+        <Label Content="Sonderwünsche" Grid.Row="2" VerticalAlignment="Top" Height="auto"/>
+        <TextBox Name="txtSonderwunsch" Grid.Row="2" Margin="5,30,5,0" Text=""/>
+        <Button Name="btnBestellen" Grid.Row="3" Margin="0,10,20,10" Content="Bestellen" 
+                Width="100" HorizontalAlignment="Right" Click="btnBestellen_Click"/>
+    </Grid>
+</Window>

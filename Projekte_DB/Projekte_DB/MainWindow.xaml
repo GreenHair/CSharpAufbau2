@@ -1,0 +1,65 @@
+﻿<Window x:Class="Projekte_DB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekte_DB"
+        xmlns:steuer="clr-namespace:Steuerelemente"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <ListBox Name="lstBox" ItemsSource="{Binding}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="{Binding Name}"/>
+                        <ListBox Grid.Column="1" ItemsSource="{Binding Arbeiter}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Label Content="{Binding Name}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ComboBox Name="cmbProj" Grid.Column="1" VerticalAlignment="Top" Margin="10" Height="25" SelectionChanged="cmbProj_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <ComboBoxItem Content="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Name="lblStunden" VerticalAlignment="Top" Margin="10,60,10,10" Content=" Stunden: " Grid.Column="1"/>
+        <ComboBox Name="cmbPersonal" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" Margin="10">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <ComboBoxItem Content="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="cmbProjekt" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Width="100" Margin="10">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <ComboBoxItem Content="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <steuer:NumericUpDown x:Name="nudStd" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="70" Width="150"/>
+        <Label Name="lblStund" Content="Stunden" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" Margin="10"/>
+        <Button Name="btnOk" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Content="OK" Margin="10"/>
+    </Grid>
+</Window>
