@@ -60,6 +60,6 @@
         </ComboBox>
         <steuer:NumericUpDown x:Name="nudStd" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="70" Width="150"/>
         <Label Name="lblStund" Content="Stunden" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" Margin="10"/>
-        <Button Name="btnOk" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Content="OK" Margin="10"/>
+        <Button Name="btnOk" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" Content="OK" Margin="10" Click="btnOk_Click"/>
     </Grid>
 </Window>

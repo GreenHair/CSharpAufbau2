@@ -62,6 +62,18 @@ namespace ProjekteLib
             conn.Close();
             return pers.ToArray();
         }
+
+        public int Eintragen(int proj_id, int pers_id, int value)
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;");
+            conn.Open();
+            conn.ChangeDatabase("projekte");
+            MySqlCommand comm = new MySqlCommand("insert into arbeit(p_id,pj_id,std) values (" + pers_id + "," + proj_id + "," + value + ")", conn);
+            int result = comm.ExecuteNonQuery();
+            conn.Close();
+            return result;
+        }
+
         public Personal[] GetPersonal()
         {
             List<Personal> pers = new List<Personal>();

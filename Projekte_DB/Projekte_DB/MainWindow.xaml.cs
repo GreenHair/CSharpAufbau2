@@ -38,5 +38,15 @@ namespace Projekte_DB
             int std = myDB.GetStunden(proj_id);
             lblStunden.Content = "Stunden: " + std;
         }
+
+        private void btnOk_Click(object sender, RoutedEventArgs e)
+        {
+            if(cmbPersonal != null && cmbProjekt != null)
+            {
+                Projekt proj = cmbProjekt.SelectedItem as Projekt;
+                Personal pers = cmbPersonal.SelectedItem as Personal;
+                myDB.Eintragen(proj.Id, pers.Id, nudStd.Value);
+            }
+        }
     }
 }
